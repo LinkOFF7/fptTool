@@ -146,9 +146,7 @@ namespace fptTool
                     c++;
                 }
                 else
-                {
                     File.AppendAllText(dir + filenames[c], line + "\r\n");
-                }
             }
         }
 
