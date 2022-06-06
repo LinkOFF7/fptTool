@@ -65,7 +65,7 @@ namespace fptTool
                 entry.Name = names[i];
                 entry.HashCode = hashes[i];
                 entry.Offset = localoffset;
-                entry.Size = text[i].Length;
+                entry.Size = Encoding.UTF8.GetByteCount(text[i]);
                 entry.Text = text[i];
                 entries.Add(entry);
                 localoffset += entry.Size;
